@@ -39,6 +39,7 @@
 				<img src="./upload/<%=rs.getString("b_fileName")%>" 
 				style="width: 100%">
 				<h3><%=rs.getString("b_name")%></h3>
+				<p><%=rs.getString("b_description")%>
 				<p><%=rs.getString("b_price")%>원
 				<p>
 					<%

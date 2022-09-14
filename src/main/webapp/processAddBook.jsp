@@ -24,6 +24,7 @@
 	String publisher = multi.getParameter("publisher");
 	String publisher_date = multi.getParameter("publisher_date");
 	String bookPrice = multi.getParameter("bookPrice");
+	String description = multi.getParameter("description");
 	
 	Integer price;
 	
@@ -36,7 +37,7 @@
 	String fname = (String) files.nextElement();
 	String fileName = multi.getFilesystemName(fname);
 	
-	String sql = "INSERT INTO book VALUES(?,?,?,?,?,?,?)";
+	String sql = "INSERT INTO book VALUES(?,?,?,?,?,?,?,?)";
 	pstmt = conn.prepareStatement(sql);
 	pstmt.setString(1, bookId);
 	pstmt.setString(2, name);
@@ -45,6 +46,7 @@
 	pstmt.setString(5, publisher_date);
 	pstmt.setInt(6, price);
 	pstmt.setString(7, fileName);
+	pstmt.setString(8, description);
 	pstmt.executeUpdate();
 	
 	if (pstmt != null)

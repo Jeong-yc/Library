@@ -67,6 +67,13 @@
 						</div>
 					</div>
 					<div class="form-group row">
+						<label class="col-sm-2">책 소개</label>
+						<div class="col-sm-5">
+							<textarea name="description" cols="50" rows="2"
+								class="form-control" value="<%=rs.getString("b_description")%>"></textarea>
+					</div>
+			</div>
+					<div class="form-group row">
 						<label class="col-sm-2">가격</label>
 						<div class="col-sm-3">
 							<input type="text" id="bookPrice"name="bookPrice" 

@@ -25,6 +25,8 @@
 					<img src="./upload/<%=rs.getString("b_fileName") %>"
 					" style="width: 100%" align="center">
 					<h3><%=rs.getString("b_name") %></h3>
+					<h4><%=rs.getString("b_author") %></h4>
+					<h4><%=rs.getString("b_price") %>원</h4>
 					<p>
 						<a href="./book.jsp?id=<%=rs.getString("b_id")%>"
 						class="btn btn-secondary" role="button"> 상세 정보</a>

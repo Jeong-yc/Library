@@ -1,4 +1,4 @@
-﻿<%@ page contentType="text/html; charset=utf-8"%>
+﻿<%@ page contentType="text/html; charset=UTF-8"%>
 <%@ page import="com.oreilly.servlet.*"%>
 <%@ page import="com.oreilly.servlet.multipart.*"%>
 <%@ page import="java.util.*"%>
@@ -21,6 +21,7 @@
 	String publisher = multi.getParameter("publisher");
 	String publisher_date = multi.getParameter("publisher_date");
 	String bookPrice = multi.getParameter("bookPrice");
+	String description = multi.getParameter("description");
 
 	Integer price;
 
@@ -41,7 +42,7 @@
 
 		if (rs.next()) {
 			if (fileName != null) {
-				sql = "UPDATE book SET b_name=?, author=?, b_publisher=?, b_publisher_date=?, b_price=?, b_fileName=? WHERE b_id=?";
+				sql = "UPDATE book SET b_name=?, author=?, b_publisher=?, b_publisher_date=?, b_price=?, b_fileName=?, b_description=? WHERE b_id=?";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, name);
 				pstmt.setString(2, author);
@@ -50,9 +51,10 @@
 				pstmt.setInt(5, price);
 				pstmt.setString(6, fileName);
 				pstmt.setString(7, bookId);
+				pstmt.setString(8, description);
 				pstmt.executeUpdate();
 			} else {
-				sql = "UPDATE book SET b_name=?, author=?, b_publisher=?, b_publisher_date=?, b_price=? WHERE b_id=?";
+				sql = "UPDATE book SET b_name=?, author=?, b_publisher=?, b_publisher_date=?, b_price=?, b_description=? WHERE b_id=?";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, name);
 				pstmt.setString(2, author);
@@ -60,6 +62,7 @@
 				pstmt.setString(4, publisher_date);
 				pstmt.setInt(5, price);
 				pstmt.setString(6, bookId);
+				pstmt.setString(7, description);
 				pstmt.executeUpdate();
 			}
 		}
