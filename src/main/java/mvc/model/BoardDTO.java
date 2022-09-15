@@ -1,4 +1,4 @@
-package mvc.model.board;
+package mvc.model;
 
 public class BoardDTO {
 	private int num;
