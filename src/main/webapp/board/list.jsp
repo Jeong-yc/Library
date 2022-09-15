@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=utf-8"%>
+<%@ page contentType="text/html; charset=Utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="java.util.*"%>
 <%@ page import="mvc.model.BoardDTO"%>
@@ -11,7 +11,7 @@
 %>
 <html>
 <head>
-<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+<link rel="stylesheet" href="./resource/css/bootstrap.min.css" />
 <title>Board</title>
 <script type="text/javascript">
 	function checkForm() {	
@@ -28,7 +28,7 @@
 	<jsp:include page="../menu.jsp" />
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="display-3">게시판</h1>
+			<h1 class="display-3" align="center">Review</h1>
 		</div>
 	</div>
 	<div class="container">
