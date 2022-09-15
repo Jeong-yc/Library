@@ -47,10 +47,14 @@
 		        	<a class="nav-link" href="#">도서 대여</a>
 		      	</li>
 		      	<li class="nav-item">
+		        	<a class="nav-link" href="<c:url 
+		        	value="/BoardListAction.do?pageNum=1"/>">감상평</a>
+		      	</li>
+		      	<li class="nav-item">
 		        	<a class="nav-link" href="<c:url value="/addBook.jsp"/>">도서 등록</a>
 		      	</li>
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="<c:url value="/editBook.jsp"/>">도서 수정</a>
+		        	<a class="nav-link" href="#">도서 수정</a>
 		      	</li>
 		      	<li class="nav-item">
 		        	<a class="nav-link" href="#">도서 삭제</a>
