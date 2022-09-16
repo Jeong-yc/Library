@@ -41,23 +41,25 @@
 		<div class="collapse navbar-collapse" id="navbarColor01">
 	  		<ul class="navbar-nav mr-auto">
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="<c:url value="/books.jsp"/>">도서 목록</a>
-		      	</li>
-		      	<li class="nav-item">
+		        	<a class="nav-link active" href="<c:url value="/books.jsp"/>">도서 목록</a>
+	 		    </li>
+		      	<!-- <li class="nav-item">
 		        	<a class="nav-link" href="#">도서 대여</a>
-		      	</li>
+		      	</li> -->
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="<c:url 
+		        	<a class="nav-link active" href="<c:url 
 		        	value="/BoardListAction.do?pageNum=1"/>">감상평</a>
 		      	</li>
+		    </ul>
+		    <ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+		        	<a class="nav-link" href="<c:url value="/addBook.jsp"/>">도서 등록(관리자)</a>
+		      	</li>			      	
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="<c:url value="/addBook.jsp"/>">도서 등록</a>
-		      	</li>
+			      	<a class="nav-link" href="<c:url value="/editBook.jsp?edit=update"/>">도서 수정(관리자)</a>
+		      	</li>			      	
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="#">도서 수정</a>
-		      	</li>
-		      	<li class="nav-item">
-		        	<a class="nav-link" href="#">도서 삭제</a>
+		        	<a class="nav-link" href="<c:url value="/editBook.jsp?edit=delete"/>">도서 삭제(관리자)</a>
 		      	</li>
 	    	</ul>
 	    	<form class="form-inline my-2 my-lg-0">

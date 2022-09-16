@@ -1,5 +1,5 @@
 ﻿<%@ page contentType="text/html; charset=UTF-8"%>
-<%-- <%@ page errorPage ="exceptionNoProductId.jsp"%> --%>
+<%-- <%@ page errorPage ="exceptionNoBookId.jsp"%> --%>
 <html>
 <head>
 <link rel ="stylesheet" href ="./resource/css/bootstrap.min.css" />

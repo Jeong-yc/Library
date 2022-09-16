@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=Utf-8"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="java.util.*"%>
 <%@ page import="mvc.model.BoardDTO"%>
@@ -35,7 +35,7 @@
 		<form action="<c:url value="./BoardListAction.do"/>" method="post">
 			<div>
 				<div class="text-right">
-					<span class="badge badge-success">전체 <%=total_record%>건	</span>
+					<span class="badge badge-primary">전체 <%=total_record%>건	</span>
 				</div>
 			</div>
 			<div style="padding-top: 50px">
@@ -84,13 +84,13 @@
 					<tr>
 						<td width="100%" align="left">&nbsp;&nbsp; 
 						<select name="items" class="txt">
-								<option value="subject">제목에서</option>
-								<option value="content">본문에서</option>
-								<option value="name">글쓴이에서</option>
+								<option value="subject">제목</option>
+								<option value="content">본문</option>
+								<option value="name">글쓴이</option>
 						</select> <input name="text" type="text" /> <input type="submit" id="btnAdd" class="btn btn-primary " value="검색 " />
 						</td>
 						<td width="100%" align="right">
-							<a href="#" onclick="checkForm(); return false;" class="btn btn-primary">&laquo;글쓰기</a>
+							<a href="#" onclick="checkForm(); return false;" class="btn btn-primary">글쓰기</a>
 						</td>
 					</tr>
 				</table>

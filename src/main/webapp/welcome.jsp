@@ -6,6 +6,8 @@
 <html>
 <head>
 <link rel="stylesheet" href="./resource/css/bootstrap.min.css" />
+<link rel="stylesheet" href="./resource/css/main.css" />
+
 <meta name="viewport" content="width-device-width">
 <meta charset="UTF-8">
 <title>Welcome!</title>
@@ -13,13 +15,22 @@
 <body>
 	<%@ include file = "menu.jsp" %>
 	<%!String greeting = "Welcome";%>
-	<div class="jumbotron">
-		<div class="container">
-			<h4 class="display-1" align="center">
-				<%=greeting%>
-			</h4>
-		</div>
-	</div>
+			<div class = "container">
+		       <div class="main-view">
+		          <ul>
+		            <li><img src="./resource/images/lib1.jpg" width="100%" /></li>
+		            <li><img src="./resource/images/lib2.jpg" width="100%" /></li>
+		            <li><img src="./resource/images/lib3.jpg" width="100%" /></li>
+		          </ul>
+		        </div>
+		        
+	        <div class="cater3-movingBG">
+				<div class="flyinTxtCont">
+					<div class="flyIn lineOne">WELCOME</div>
+					<div class="flyIn lineTwo">LIBRARY </div>	
+					<div class="flyIn lineFour"></div>
+				</div>
+			</div>
 	
 	<div class="container">
 		<div class="text-center">
