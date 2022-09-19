@@ -21,7 +21,7 @@
 					rs = pstmt.executeQuery();
 					while (rs.next()) {
 				%>
-				<div class="col-md-2">
+				<div class="col-md-3">
 					<img src="./upload/<%=rs.getString("b_fileName") %>"
 					" style="width: 100%" align="center">
 					<h3><%=rs.getString("b_name") %></h3>

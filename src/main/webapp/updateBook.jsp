@@ -77,7 +77,7 @@
 						<label class="col-sm-2">가격</label>
 						<div class="col-sm-3">
 							<input type="text" id="bookPrice"name="bookPrice" 
-								class="form-control" value="<%=rs.getInt("b_bookPrice")%>">
+								class="form-control" value="<%=rs.getInt("b_price")%>">
 						</div>
 					</div>
 					<div class="form-group row">

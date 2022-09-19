@@ -8,9 +8,9 @@
 <body>
 	<jsp:include page="/menu.jsp" />
 		<div class="container">
-			<h1 class="display-2" align="left">ADMIN Log-in</h1>
+			<h1 class="display-2" align="center">LOG-IN</h1>
 		</div>
-	<div class="container" align="left">
+	<div class="container" align="center">
 		<div class="col-md-4 col-md-offset-4">
 			<h3 class="form-signin-heading">Please sign in</h3>
 			<%

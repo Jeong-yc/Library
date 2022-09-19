@@ -40,7 +40,14 @@
 			<input name="id" type="hidden" class="form-control"
 				value="${sessionId}">
 			<div class="form-group row">
-				<label class="col-sm-2 control-label" >성명</label>
+				<label class="col-sm-2 control-label" >도서명</label>
+				<div class="col-sm-3">
+					<input name="name" type="text" class="form-control" value="<%=name %>"
+						placeholder="name">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2 control-label" >이름</label>
 				<div class="col-sm-3">
 					<input name="name" type="text" class="form-control" value="<%=name %>"
 						placeholder="name">
@@ -55,7 +62,7 @@
 				</div>
 			</div>
 			<div class="form-group row">
-				<label class="col-sm-2 control-label" >내용</label>
+				<label class="col-sm-2 control-label" >후기</label>
 				<div class="col-sm-8">
 					<textarea name="content" cols="50" rows="5" class="form-control"
 						placeholder="content"></textarea>

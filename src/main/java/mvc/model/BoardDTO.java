@@ -9,6 +9,15 @@ public class BoardDTO {
 	private String regist_day;
 	private int hit;
 	private String ip;
+	private String b_id;
+
+	public String getB_id() {
+		return b_id;
+	}
+
+	public void setB_id(String b_id) {
+		this.b_id = b_id;
+	}
 
 	public BoardDTO() {
 		super();		

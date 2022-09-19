@@ -28,7 +28,6 @@
 				<div class="flyinTxtCont">
 					<div class="flyIn lineOne">WELCOME</div>
 					<div class="flyIn lineTwo">LIBRARY </div>	
-					<div class="flyIn lineFour"></div>
 				</div>
 			</div>
 	

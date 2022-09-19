@@ -32,9 +32,9 @@
 }
 
 img {
-	width: 750px;
-	height: 500px;
-	object-fit: cover;	
+	width: 100vw;
+	height: 70vh;
+	object-fit: cover;
 }
 
 .flyinTxtCont {
@@ -73,32 +73,14 @@ img {
     transition:.6s ease in;
     animation: txtFlyIn .6s linear;
 }
-.lineThree {
-    transition-delay:.6s; 
-    transition:.8s ease in;
-    animation: txtFlyIn .9s linear;
-}
-.lineOne, .lineTwo, .lineThree {
+
+.lineOne, .lineTwo {
     font-size:90px;
     font-weight: 800;
     letter-spacing: 2px;
   }
-.lineFour {
-    transition-delay:2s; 
-    transition:2s ease in;
-    animation: fadeIn 2s linear;
-    width: 100%;
-    background-color:rgba(255,255,255,0.9);
-    display:inline-block;
-    color:#000;
-    box-size:border-box;
-    max-width:63%;
-    max-width: 22em;
-    font-size: 32px;
-    padding: .2em .5em;
-    margin-top: 30px;
-    
-}
+  
+
 @keyframes fadeIn{
     0% { opacity:0;}
     100% { opacity:1;}

@@ -54,7 +54,8 @@
 					class="btn btn-danger" role="button">삭제 &raquo;></a>
 					<%
 						}
-					%>				
+					%>
+								
 			</div>
 			<%
 				}

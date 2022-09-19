@@ -95,6 +95,7 @@ public class BoardDAO {
 				board.setRegist_day(rs.getString("regist_day"));
 				board.setHit(rs.getInt("hit"));
 				board.setIp(rs.getString("ip"));
+				board.setB_id(rs.getString("B_id"));
 				list.add(board);
 
 				if (index < (start + limit) && index <= total_record)
@@ -166,7 +167,7 @@ public class BoardDAO {
 		try {
 			conn = DBConnection.getConnection();		
 
-			String sql = "insert into board values(?, ?, ?, ?, ?, ?, ?, ?)";
+			String sql = "insert into board values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
 //			pstmt = conn.prepareStatement(sql);
 			pstmt = conn.prepareStatement(sql, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
@@ -178,6 +179,7 @@ public class BoardDAO {
 			pstmt.setString(6, board.getRegist_day());
 			pstmt.setInt(7, board.getHit());
 			pstmt.setString(8, board.getIp());
+			pstmt.setString(9, board.getB_id());
 
 			pstmt.executeUpdate();
 		} catch (Exception ex) {
@@ -262,6 +264,7 @@ public class BoardDAO {
 				board.setRegist_day(rs.getString("regist_day"));
 				board.setHit(rs.getInt("hit"));
 				board.setIp(rs.getString("ip"));
+				board.setIp(rs.getString("b_id"));
 			}
 			
 			return board;

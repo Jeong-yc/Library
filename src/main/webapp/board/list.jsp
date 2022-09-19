@@ -73,7 +73,6 @@
 							</c:when>
 							<c:otherwise>
 								<font color='4C5317'> [${i}]</font>
-
 							</c:otherwise>
 						</c:choose>
 					</a>
@@ -87,7 +86,9 @@
 								<option value="subject">제목</option>
 								<option value="content">본문</option>
 								<option value="name">글쓴이</option>
-						</select> <input name="text" type="text" /> <input type="submit" id="btnAdd" class="btn btn-primary " value="검색 " />
+						</select> 
+						<input name="text" type="text" /> 
+						<input type="submit" id="btnAdd" class="btn btn-primary " value="검색 " />
 						</td>
 						<td width="100%" align="right">
 							<a href="#" onclick="checkForm(); return false;" class="btn btn-primary">글쓰기</a>
