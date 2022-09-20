@@ -18,17 +18,18 @@
 			
 			<% 
 				request.setCharacterEncoding("UTF-8");	
-// 				String name = (request.getParameter("name") ==null) ? "" :  request.getParameter("name").trim() ;
-				String keyword = (request.getParameter("keyword") ==null) ? "" :  request.getParameter("keyword").trim() ;
+				String name = (request.getParameter("name") ==null) ? "" :  request.getParameter("name").trim() ;
+// 				String keyword = (request.getParameter("keyword") ==null) ? "" :  request.getParameter("keyword").trim() ;
 				
 			%>
 			<%
-// 				String sql = "select * from book where b_name = '"+name+"' ";
-				String sql = "select * from book where b_name like ? or b_author like ? or b_publisher like ? ";
+				String sql = "select * from book where b_name = '"+name+"' ";
+// 				String sql = "select * from book where b_name like ? or b_author like ? or b_publisher like ? ";
 				pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, keyword);
-				pstmt.setString(2, keyword);
-				pstmt.setString(3, keyword);
+				pstmt.setString(1, name);
+// 				pstmt.setString(1, keyword);
+// 				pstmt.setString(2, keyword);
+// 				pstmt.setString(3, keyword);
 				rs = pstmt.executeQuery();
 				while (rs.next()) {
 			%>
