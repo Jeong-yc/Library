@@ -95,7 +95,7 @@ public class BoardDAO {
 				board.setRegist_day(rs.getString("regist_day"));
 				board.setHit(rs.getInt("hit"));
 				board.setIp(rs.getString("ip"));
-				board.setB_id(rs.getString("B_id"));
+				board.setB_id(rs.getString("b_id"));
 				list.add(board);
 
 				if (index < (start + limit) && index <= total_record)
@@ -180,8 +180,8 @@ public class BoardDAO {
 			pstmt.setInt(7, board.getHit());
 			pstmt.setString(8, board.getIp());
 			pstmt.setString(9, board.getB_id());
-
 			pstmt.executeUpdate();
+			
 		} catch (Exception ex) {
 			System.out.println("insertBoard() 에러 : " + ex);
 		} finally {

@@ -39,13 +39,13 @@
 			class="form-horizontal" method="post" onsubmit="return checkForm()">
 			<input name="id" type="hidden" class="form-control"
 				value="${sessionId}">
-			<div class="form-group row">
-				<label class="col-sm-2 control-label" >도서명</label>
-				<div class="col-sm-3">
-					<input name="name" type="text" class="form-control" value="<%=name %>"
-						placeholder="name">
-				</div>
-			</div>
+<!-- 			<div class="form-group row"> -->
+<!-- 				<label class="col-sm-2 control-label" >도서명</label> -->
+<!-- 				<div class="col-sm-3"> -->
+<%-- 					<input name="name" type="text" class="form-control" value="<%=name %>" --%>
+<!-- 						placeholder="name"> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
 			<div class="form-group row">
 				<label class="col-sm-2 control-label" >이름</label>
 				<div class="col-sm-3">
