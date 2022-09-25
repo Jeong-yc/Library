@@ -24,7 +24,7 @@
 		          </ul>
 		        </div>
 		        
-	        <div class="cater3-movingBG">
+	        <div class="cater3-movingBG">  
 				<div class="flyinTxtCont">
 					<div class="flyIn lineOne">WELCOME</div>
 					<div class="flyIn lineTwo">LIBRARY </div>	
